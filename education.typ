@@ -10,11 +10,11 @@
 #cvEntry(
     title: [Ph.D. in Computer Science],
     society: [Purdue University],
-    date: [2020 - 2025 (expected August)],
+    date: [2020 - now (expected Aug 2025)],
     location: [West Lafayette, IN, USA],
     // logo: image("../src/logos/ucla.png"),
     description: list(
-        [Thesis: Trace-Guided Reasoning of Functional Programs],
+        [Thesis: Trace-Guided Reasoning of Functional Programs (tentative)],
         [Selected Courses: Programming Languages #hBar() Compiling and Programming Systems #hBar() Neurosymbolic Program Synthesis],
     ),
 )

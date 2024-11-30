@@ -21,7 +21,3 @@
     "services",
   "skills",
 ))
-
-// Local Variables:
-// tp--master-file: "/home/slark/Desktop/brilliant-cv/cv.typ"
-// End:

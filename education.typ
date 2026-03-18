@@ -14,8 +14,8 @@
     location: [West Lafayette, IN, USA],
     // logo: image("../src/logos/ucla.png"),
     description: list(
-        [Thesis: Trace-Guided Reasoning of Functional Programs (tentative)],
-        [Selected Courses: Programming Languages #hBar() Compiling and Programming Systems #hBar() Neurosymbolic Program Synthesis],
+        [Thesis: Trace-Guided Reasoning of Functional Programs (tentative) #hBar() Advisor: Dr. Suresh Jagannathan],
+        [Selected Courses: Compiling and Programming Systems (built *end-to-end compiler* for MiniScala), Neurosymbolic Program Synthesis],
     ),
 )
 
@@ -27,7 +27,7 @@
   // logo: image("../src/logos/ucla.png"),
   description: list(
     // [Thesis: Exploring the Use of Machine Learning Algorithms for Predicting Stock Prices: A Comparative Study of Regression and Time-Series Models],
-    [Selected Courses: Operating System #hBar() Introduction to Machine Learning #hBar() Conversational Artificial Intelligence],
+    [Selected Courses: Operating System, #h(1pt) Introduction to Machine Learning, #h(1pt) Conversational Artificial Intelligence],
   ),
 )
 
@@ -36,7 +36,7 @@
     society: [Shanghai Jiao Tong University],
     date: [2016 - 2020],
     location: [Shanghai, China],
-    description: list(),
+    description: [],
 )
 
 // Local Variables:

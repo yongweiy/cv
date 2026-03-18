@@ -8,6 +8,7 @@
 #cvSection("Honors and Awards")
 
 #list(
+    [*ICSE 2025 Distinguished Paper Award*, ACM SIGPLAN],
     [Merit Recognition Award 2024, Purdue University],
     [*OOPSLA 2023 Distinguished Paper Award*, ACM SIGPLAN],
     [*PLDI 2023 Distinguished Paper Award*, ACM SIGPLAN],

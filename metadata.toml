@@ -10,9 +10,9 @@ language = "en"
     awesome_color = "skyblue"
 
     # Skips are for controlling the spacing between sections and entries
-    before_section_skip = "1pt"
-    before_entry_skip = "1pt"
-    before_entry_description_skip = "1pt"
+    before_section_skip = ".2pt"
+    before_entry_skip = "0pt"
+    before_entry_description_skip = ".1pt"
 
     [layout.fonts]
         regular_fonts = ["Source Sans Pro", "Source Sans 3"]
@@ -66,7 +66,7 @@ language = "en"
 # i.e. [[lang.ru]]
 # each section must contains the following fields
 [lang.en]
-    header_quote = "Final year Ph.D. student in programming languages and formal methods looking for full-time positions in industry."
+    # header_quote = "Final year Ph.D. student in programming languages and formal methods looking for full-time positions in industry."
     cv_footer = "Curriculum vitae"
     letter_footer = "Cover letter"
 

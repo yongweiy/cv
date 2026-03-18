@@ -8,5 +8,7 @@
 #cvSection("Services")
 
 #list(
-    [PLDI 2024 Artifact Evaluation Committee]
+    [PLDI 2024 Artifact Evaluation Committee],
+    [PLDI 2025 Artifact Evaluation Committee],
+    [OOPSLA 2025 Artifact Evaluation Committee]
 )

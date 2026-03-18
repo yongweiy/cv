@@ -1,9 +1,14 @@
-@article{hatch,
-  title = {Derivative-Guided Symbolic Execution},
-  author = {Yuan, Yongwei and Zhou, Zhe and Belyakova, Julia and Jagannathan, Suresh},
-  date = {2025-01-25},
-  journaltitle = {Proceedings of the ACM on Programming Languages},
-  issue = {To appear at POPL},
+@online{chakarovFormallyVerifiedCloudscale2025,
+  title = {Formally Verified Cloud-Scale Authorization},
+  author = {Chakarov, Aleks and Geldenhuys, Jaco and Heck, Matthew and Hicks, Mike and Huang, Sam and Jaloyan, Georges Axel and Joshi, Anjali and Leino, Rustan and Mayer, Mikael and McLaughlin, Sean and Mritunjai, Akhilesh and Claudel, Clément Pit and Porncharoenwase, Sorawee and Rabe, Florian and Rapoport, Marianna and Reger, Giles and Roux, Cody and Rungta, Neha and Salkeld, Robin and Schlaipfer, Matthias and Schoepe, Daniel and Schwartzentruber, Johanna and Tasiran, Serdar and Tomb, Aaron and Torlak, Emina and Tristan, John and Wagner, Lucas and Whalen, Mike and Willems, Remy and Xiang, Jenny and Byun, Tae Joon and Cohen, Joshua and Wang, Ruijie and Jang, Junyoung and Rath, Jakob and Syeda, Hira Taqdees and Wagner, Dominik and Yuan, Yongwei},
+  date = {2025},
+  url = {https://www.amazon.science/publications/formally-verified-cloud-scale-authorization},
+  urldate = {2025-03-18},
+  abstract = {All critical systems must evolve to meet the needs of a growing and diversifying user base. But supporting that evolution is challenging at increasing scale: Maintainers must find a way to ensure that each change does only what is intended, and will not inadvertently change behavior for existing…},
+  langid = {english},
+  organization = {Amazon Science},
+  annotation = {ICSE'25},
+  file = {/home/slark/Zotero/storage/NEX7MBLB/Chakarov et al. - 2025 - Formally verified cloud-scale authorization.pdf}
 }
 
 @article{weiConsolidatingSmartContracts2024,
@@ -18,15 +23,51 @@
   urldate = {2024-07-09},
   abstract = {Ensuring the reliability of smart contracts is of vital importance due to the wide adoption of smart contract    programs in decentralized financial applications. However, statically checking many rich properties of smart    contract programs can be challenging. On the other hand, dynamic validation approaches have shown promise    for widespread adoption in practice. Nevertheless, as part of the programming environment for smart contracts,    existing dynamic validation approaches have not provided programmers with a notion to clearly articulate    the interface between components, especially for addresses representing opaque contract instances. We argue    that the “design-by-contract” approach should complement the development of smart contract programs.    Unfortunately, there is only limited linguistic support for that in existing smart contract languages.        In this paper, we design a Solidity language extension ConSol that supports behavioral contracts. ConSol    provides programmers with a modular specification and monitoring system for both functional and latent    address behaviors. The key capability of ConSol is to attach specifications to first-class addresses and monitor    violations when invoking these addresses. We evaluate ConSol using 20 real-world cases, demonstrating    its effectiveness in expressing critical conditions and preventing attacks. Additionally, we assess ConSol’s    efficiency and compare gas consumption with manually inserted assertions, showing that our approach    introduces only marginal gas overhead. By separating specifications and implementations using behavioral    contracts, ConSol assists programmers in writing smart contract code that is more robust and readable.},
   issue = {PLDI},
+  annotation = {PLDI'24},
   file = {/home/slark/Zotero/storage/J2RNI2IE/Wei et al. - 2024 - Consolidating Smart Contracts with Behavioral Contracts.pdf}
 }
 
-@article{yuanLivePatternMatching2023a,
+@software{yuanArtifactDerivativeGuidedSymbolic2024,
+  title = {Artifact for "{{Derivative-Guided Symbolic Execution}}"},
+  author = {Yuan, Yongwei and Zhou, Zhe and Belyakova, Julia and Jagannathan, Suresh},
+  date = {2024-10},
+  doi = {10.5281/zenodo.13800040},
+  url = {https://doi.org/10.5281/zenodo.13800040},
+  organization = {Zenodo}
+}
+
+@software{yuanArtifactTraceGuidedInductive2023,
+  title = {Artifact for "{{Trace-Guided Inductive Synthesis}} of {{Recursive Functional Programs}}"},
+  author = {Yuan, Yongwei and Radhakrishna, Arjun and Samanta, Roopsha},
+  date = {2023-03-09},
+  doi = {10.5281/zenodo.7812616},
+  url = {https://zenodo.org/records/7812616},
+  urldate = {2024-11-10},
+  abstract = {Artifacts for "Trace-Guided Inductive Synthesis of Recursive Functional Programs"},
+  organization = {Zenodo}
+}
+
+@article{yuanDerivativeGuidedSymbolicExecution2025,
+  title = {Derivative-{{Guided Symbolic Execution}}},
+  author = {Yuan, Yongwei and Zhou, Zhe and Belyakova, Julia and Jagannathan, Suresh},
+  date = {2025-01-09},
+  journaltitle = {Proc. ACM Program. Lang.},
+  volume = {9},
+  pages = {50:1475--50:1505},
+  doi = {10.1145/3704886},
+  url = {https://dl.acm.org/doi/10.1145/3704886},
+  urldate = {2025-01-10},
+  abstract = {We consider the formulation of a symbolic execution (SE) procedure for    functional programs that interact with effectful, opaque libraries.    Our procedure allows specifications of libraries and abstract data    type (ADT) methods that are expressed in Linear Temporal Logic    over Finite Traces (LTLf), interpreting them as symbolic    finite automata (SFAs) to enable intelligent specification-guided    path exploration in this setting. We apply our technique to    facilitate the falsification of complex data structure safety    properties in terms of effectful operations made by ADT methods on    underlying opaque representation type(s). Specifications naturally    characterize admissible traces of temporally-ordered events that ADT    methods (and the library methods they depend upon) are allowed to    perform. We show how to use these specifications to construct    feasible symbolic input states for the corresponding methods, as well    as how to encode safety properties in terms of this formalism. More    importantly, we incorporate the notion of symbolic derivatives,    a mechanism that allows the SE procedure to intelligently    underapproximate the set of precondition states it needs to explore,    based on the automata structures latent in the provided    specifications and the safety property that is to be falsified.    Intuitively, derivatives enable symbolic execution to exploit temporal    constraints defined by trace-based specifications to quickly prune    unproductive paths and discover feasible error states. Experimental    results on a wide-range of challenging ADT implementations demonstrate    the effectiveness of our approach.},
+  issue = {POPL},
+  annotation = {POPL'25},
+  file = {/home/slark/Zotero/storage/QEZKEKDV/Yuan et al. - 2025 - Derivative-Guided Symbolic Execution.pdf}
+}
+
+@article{yuanLivePatternMatching2023,
   title = {Live {{Pattern Matching}} with {{Typed Holes}}},
   author = {Yuan, Yongwei and Guest, Scott and Griffis, Eric and Potter, Hannah and Moon, David and Omar, Cyrus},
   date = {2023-04-06},
-  journaltitle = {Proceedings of the ACM on Programming Languages},
-  shortjournal = {Proc. ACM Program. Lang.},
+  journaltitle = {Proc. ACM Program. Lang.},
   volume = {7},
   pages = {609--635},
   issn = {2475-1421},
@@ -36,15 +77,15 @@
   abstract = {Several modern programming systems, including GHC Haskell, Agda, Idris, and Hazel, support               typed holes               . Assigning static and, to varying degree, dynamic meaning to programs with holes allows program editors and other tools to offer meaningful feedback and assistance throughout editing, i.e. in a               live               manner. Prior work, however, has considered only holes appearing in expressions and types. This paper considers, from type theoretic and logical first principles, the problem of typed pattern holes. We confront two main difficulties, (1) statically reasoning about exhaustiveness and irredundancy when patterns are not fully known, and (2) live evaluation of expressions containing both pattern and expression holes. In both cases, this requires reasoning conservatively about all possible hole fillings. We develop a typed lambda calculus, Peanut, where reasoning about exhaustiveness and redundancy is mapped to the problem of deriving first order entailments. We equip Peanut with an operational semantics in the style of Hazelnut Live that allows us to evaluate around holes in both expressions and patterns. We mechanize the metatheory of Peanut in Agda and formalize a procedure capable of deciding the necessary entailments. Finally, we scale up and implement these mechanisms within Hazel, a programming environment for a dialect of Elm that automatically inserts holes during editing to provide static and dynamic feedback to the programmer in a maximally live manner, i.e. for every possible editor state. Hazel is the first maximally live environment for a general-purpose functional language.},
   issue = {OOPSLA1},
   langid = {english},
+  annotation = {OOPSLA'23},
   file = {/home/slark/Zotero/storage/AMZCRVYN/Yuan et al. - 2023 - Live Pattern Matching with Typed Holes.pdf}
 }
 
-@article{yuanTraceGuidedInductiveSynthesis2023a,
+@article{yuanTraceGuidedInductiveSynthesis2023,
   title = {Trace-{{Guided Inductive Synthesis}} of {{Recursive Functional Programs}}},
   author = {Yuan, Yongwei and Radhakrishna, Arjun and Samanta, Roopsha},
   date = {2023-06-06},
-  journaltitle = {Proceedings of the ACM on Programming Languages},
-  shortjournal = {Proc. ACM Program. Lang.},
+  journaltitle = {Proc. ACM Program. Lang.},
   volume = {7},
   pages = {860--883},
   issn = {2475-1421},
@@ -54,5 +95,6 @@
   abstract = {We propose a novel trace-guided approach to tackle the challenges of ambiguity and generalization in synthesis of recursive functional programs from input-output examples. Our approach augments the search space of programs with recursion traces consisting of recursive subcalls of the programs. Our method is based on a new version space algebra (VSA) for succinct representation and efficient manipulation of pairs of recursion traces and programs that are consistent with each other. We have implemented this approach in a tool called SyRup and evaluated it on benchmarks from prior work. Our evaluation demonstrates that SyRup not only requires fewer examples to achieve a certain success rate than existing synthesizers, but is also less sensitive to the quality of the examples.},
   issue = {PLDI},
   langid = {english},
+  annotation = {PLDI'23},
   file = {/home/slark/Zotero/storage/NMAXSNS2/Yuan et al. - 2023 - Trace-Guided Inductive Synthesis of Recursive Functional Programs.pdf}
 }

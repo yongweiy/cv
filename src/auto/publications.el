@@ -4,9 +4,12 @@
  "publications"
  (lambda ()
    (LaTeX-add-bibitems
-    "hatch"
+    "chakarovFormallyVerifiedCloudscale2025"
     "weiConsolidatingSmartContracts2024"
-    "yuanLivePatternMatching2023a"
-    "yuanTraceGuidedInductiveSynthesis2023a"))
+    "yuanDerivativeGuidedSymbolicExecution2025"
+    "yuanLivePatternMatching2023"
+    "yuanTraceGuidedInductiveSynthesis2023")
+   (LaTeX-add-environments
+    '("btHighlight" LaTeX-env-args ["argument"] 0)))
  '(or :bibtex :latex))
 

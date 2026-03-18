@@ -5,7 +5,7 @@
 #let cvEntry = cvEntry.with(metadata: metadata)
 
 
-#cvSection("Experience")
+#cvSection("Work Experience")
 
 #{
   let accentColor = setAccentColor(awesomeColors, metadata)
@@ -87,36 +87,36 @@
         {entryB2Style([Summer 2023])}
     )
     entryDescriptionStyle(list(
-        [Devised and implemented algorithmic optimization for policy evaluation in Identity and Access Management (1 billion calls per second).],
-        [Profiled the policy evaluation engine, discovered mutiple unusual patterns, and turned them into optimization opportunities.],
-        [Proved the correctness of all these optimizations in Dafny and improved the performance of the policy evaluation engine by about 10%.],
-    ))
+    [Architected and implemented *system-wide algorithmic optimization* for AWS IAM policy evaluation engine (1B calls/sec)],
+    [Identified aditional critical optimization opportunities through *comprehensive profiling* of evaluation engine patterns],
+    [Verified all algorithmic enhancements with Dafny formal proofs, delivering a combined *10% performance gain* to the engine],
+))
     makeTable(
         {entryB1Style([Applied Scientist Intern])},
         {entryB2Style([Summer 2022])}
     )
     entryDescriptionStyle(list(
-      [Proved the correctness of IP address parsing in Dafny, which is a critical component of Identity and Access Management.],
-      [Identified Dafny's limitation in bitvector reasoning and devised an effective workaround for it, enabling sound analysis of IP addresses.],
-      [Implemented a Dafny-to-Java transpilation pass to generate idiomatic bitvector manipulation code.],
-      [Adopted the Checker Framework to enable various safety checks in the generated Java code, providing future proof to developers.]
+        [Formally verified the correctness of IP address parsing, a critical component of AWS IAM security infrastructure, using Dafny],
+        [Pinpointed and overcame Dafny's bitvector reasoning limitations with novel workarounds for *robust analysis* of IP address parsing],
+        [Engineered a Dafny-to-Java compiler to *generate idiomatic and efficient code* for arithmetic operations],
+        [Integrated Checker Framework into the compiler to provide *static safety guarantees* for future Java development]
     ))
 
-    v(beforeEntrySkip)
-    makeTable(
-        {entryA1Style([Purdue University])},
-        {entryA2Style([West Lafayette, IN, USA])}
-    )
-    makeTable(
-        {entryB1Style([Graduate Research Assistant])},
-        {entryB2Style([2023 - now])}
-    )
-    entryDescriptionStyle(list([Under the supervision of Dr. Suresh Jagannathan.]))
-    makeTable(
-        {entryB1Style([Graduate Research Assistant])},
-        {entryB2Style([2020 - 2023])}
-    )
-    entryDescriptionStyle(list([Under the supervision of Dr. Roopsha Samanta.]))
+    // v(beforeEntrySkip)
+    // makeTable(
+    //     {entryA1Style([Purdue University])},
+    //     {entryA2Style([West Lafayette, IN, USA])}
+    // )
+    // makeTable(
+    //     {entryB1Style([Graduate Research Assistant])},
+    //     {entryB2Style([2023 - now])}
+    // )
+    // entryDescriptionStyle(list([Under the supervision of Dr. Suresh Jagannathan.]))
+    // makeTable(
+    //     {entryB1Style([Graduate Research Assistant])},
+    //     {entryB2Style([2020 - 2023])}
+    // )
+    // entryDescriptionStyle(list([Under the supervision of Dr. Roopsha Samanta.]))
 }
 
 // #cvEntry(

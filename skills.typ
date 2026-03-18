@@ -8,7 +8,7 @@
 
 #cvSkill(
   type: [Programming],
-    info: [OCaml #hBar() C / C++ #hBar() F\# #hBar() Scala #hBar() Haskell #hBar() Python #hBar() TypeScript],
+    info: [OCaml #hBar() C / C++ #hBar() F\# #hBar() Java #hBar() Scala #hBar() Haskell #hBar() Python #hBar() TypeScript],
 )
 
 #cvSkill(
